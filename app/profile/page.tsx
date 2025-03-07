@@ -149,9 +149,9 @@ export default function ProfilePage() {
                 <p className="text-muted-foreground mb-6">
                   You haven't uploaded any memes yet. Start creating and sharing your humor!
                 </p>
-                <Button href="/upload" asChild>
-                  <Link href="/upload">Upload Your First Meme</Link>
-                </Button>
+                <Link href="/upload">
+                    <Button asChild>Upload Your First Meme</Button>
+                </Link>
               </div>
             ) : (
               <MemeGrid memes={userMemes} />
