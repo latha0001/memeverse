@@ -150,7 +150,7 @@ export default function ProfilePage() {
                   You haven't uploaded any memes yet. Start creating and sharing your humor!
                 </p>
                 <Link href="/upload">
-                    <Button asChild>Upload Your First Meme</Button>
+                  <Button asChild>Upload Your First Meme</Button>
                 </Link>
               </div>
             ) : (
