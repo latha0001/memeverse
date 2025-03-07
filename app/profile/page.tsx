@@ -165,9 +165,11 @@ export default function ProfilePage() {
                 <p className="text-muted-foreground mb-6">
                   You haven't saved any memes yet. Explore and save memes you like!
                 </p>
-                <Button href="/explore" asChild>
-                  <a href="/explore">Explore Memes</a>
-                </Button>
+                <Link href="/explore" passHref>
+                   <Button asChild>
+                     <a>Explore Memes</a>
+                   </Button>
+                 </Link>
               </div>
             ) : (
               <MemeGrid memes={savedMemes} />
